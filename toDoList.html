@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./toDoList.css" />
+    <title>To Do List</title>
+  </head>
+  <body>
+    <div class="container grid-1-2">
+      <article>
+        <h2 class="toDo-title">Add Activity</h2>
+        <form class="toDo-form">
+          <input type="text" name="activity" placeholder="What Will You Do?" />
+          <input type="submit" value="+" />
+          <input type="hidden" name="id" />
+        </form>
+      </article>
+
+      <article>
+        <h1>To do List</h1>
+        <table class="toDo-table">
+          <tbody></tbody>
+        </table>
+      </article>
+
+      <section>
+        <template id="toDo-template">
+          <tr class="toDo-tr">
+            <td class="toDo-activity"></td>
+            <td class="check-edit-delete">
+              <button class="check">❌</button>
+              <button class="edit">Edit</button>
+              <button class="delete">Delete</button>
+            </td>
+          </tr>
+        </template>
+      </section>
+    </div>
+    <script src="./toDoList.js"></script>
+  </body>
+</html>
